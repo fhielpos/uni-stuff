@@ -25,7 +25,7 @@ struct {
 } usuario_juan;
 ```
 
-3. Represente un vuelco de memoria en hexadecimal (es decir, los contenidos de lamemoria en hexadecimal) del segmento de datos que contiene a la estructura. Complete elespacio que se desperdicia por el alineamiento de los datos con ceros.
+3. Represente un vuelco de memoria en hexadecimal (es decir, los contenidos de la memoria en hexadecimal) del segmento de datos que contiene a la estructura. Complete elespacio que se desperdicia por el alineamiento de los datos con ceros.
     
 4. Reordenar la estructura para que se desperdicie la menor cantidad de espacio poralineamiento ¿Cuántos bytes de diferencia hay entre ambas versiones de la estructura?
     
@@ -59,8 +59,18 @@ key:    .word
 ```
         .data
 user:   .asciiz Juan
-puntaje:.byte 0
 edad:   .byte 42
+puntaje:.byte 0
 altura: .float 1.70
 key:    .word      
 ```
+
+### EJ 5
+
+|Posicion|Dato|Memoria|
+|:--:|--|--|
+|0x00004000|user|0x4A75616D|
+|0x00004005|edad|0x0000002A|
+|0x00004008|altura|0x9a99d93F|
+|0x0000400C|puntaje|0x00000000|
+|0x00004010|key|0xFA093319|
