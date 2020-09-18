@@ -95,8 +95,9 @@ REVISION:
 |POSICION|0 - 1 - 2 - 3|DATO|
 |:--:|:--:|--|
 |0x4000|4A 75 61 6D|.ascii Juan|
-|0x4004|00 **2A** 00 00|.ascii 0, .byte 42, .byte 0|
+|0x4004|00 **2A** 00 00|.ascii 0, .byte 42|
 |0x4008|9A 99 D9 3F|.float 1.7|
-|0x400C|FA 09 33 19|.word 0xFA093319|
+|0x400C|0x00000000|.byte 0|
+|0x4010|FA 09 33 19|.word 0xFA093319|
 
 `Dato edad:` Dirección: 0x4005 
