@@ -55,6 +55,16 @@ key:    .word
 |puntaje|0x00000000|
 |key|0xFA093319|
 
+REVISION 2:
+
+|POSICION|0 - 1 - 2 - 3|DATO|
+|:--:|:--:|--|
+|0x0000|4A 75 61 6D|.ascii Juan|
+|0x0004|00 2A 00 00|.ascii 0, .byte 42|
+|0x0008|9A 99 D9 3F|.float 1.7|
+|0x000C|00 00 00 00|.byte 0|
+|0x0010|FA 09 33 19|.word 0xFA093319|
+
 ### EJ 4
 
 ```
@@ -75,3 +85,12 @@ key:    .word
 |0x00004008|altura|0x9a99d93F|
 |0x0000400C|puntaje|0x00000000|
 |0x00004010|key|0xFA093319|
+
+REVISION:
+
+|POSICION|0 - 1 - 2 - 3|DATO|
+|:--:|:--:|--|
+|0x0000|4A 75 61 6D|.ascii Juan|
+|0x0004|00 2A 00 00|.ascii 0, .byte 42, .byte 0|
+|0x0008|9A 99 D9 3F|.float 1.7|
+|0x000C|FA 09 33 19|.word 0xFA093319|
