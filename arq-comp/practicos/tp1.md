@@ -10,9 +10,10 @@
     * [Ej 4](#ej-4)
 
 ## Enunciado
-    1. Leer el apunte de mips (http://se.fi.uncoma.edu.ar/ayodc1/apuntes/mips.pdf), con especialatención a la sección “5.1 directivas”.
+
+1. Leer el apunte de mips (http://se.fi.uncoma.edu.ar/ayodc1/apuntes/mips.pdf), con especialatención a la sección “5.1 directivas”.
     
-    2. Traduzca la siguiente estructura de un lenguaje de alto nivel a directivas de ensambladorde mips. Respete el orden de las variables. Tenga en cuenta que el string contiene uncarácter con valor cero para indicar el final de la cadena.
+2. Traduzca la siguiente estructura de un lenguaje de alto nivel a directivas de ensambladorde mips. Respete el orden de las variables. Tenga en cuenta que el string contiene uncarácter con valor cero para indicar el final de la cadena.
 
 ```c
 struct {
@@ -24,11 +25,11 @@ struct {
 } usuario_juan;
 ```
 
-    3. Represente un vuelco de memoria en hexadecimal (es decir, los contenidos de lamemoria en hexadecimal) del segmento de datos que contiene a la estructura. Complete elespacio que se desperdicia por el alineamiento de los datos con ceros.
+3. Represente un vuelco de memoria en hexadecimal (es decir, los contenidos de lamemoria en hexadecimal) del segmento de datos que contiene a la estructura. Complete elespacio que se desperdicia por el alineamiento de los datos con ceros.
     
-    4. Reordenar la estructura para que se desperdicie la menor cantidad de espacio poralineamiento ¿Cuántos bytes de diferencia hay entre ambas versiones de la estructura?
+4. Reordenar la estructura para que se desperdicie la menor cantidad de espacio poralineamiento ¿Cuántos bytes de diferencia hay entre ambas versiones de la estructura?
     
-    5. Si la estructura original se coloca en la posición de memoria ​0x4000​ ¿Cuál es la direccióndel dato edad?
+5. Si la estructura original se coloca en la posición de memoria ​0x4000​ ¿Cuál es la direccióndel dato edad?
 
 ## Respuestas
 
