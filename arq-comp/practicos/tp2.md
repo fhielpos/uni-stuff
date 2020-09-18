@@ -69,12 +69,12 @@ main:
 ```
     .text
 main:
-    lw $t1, num
-    mul $t1, $t1
-    mflo $t2
-    mul $t2, $t1
-    mflo $t2
-    sw $t2, destino
+    lw $t1, num         # Load num in t1
+    mul $t1, $t1        # Double t1
+    mflo $t2            # Load LO in t2
+    mul $t2, $t1        # Multiply t1 and t2
+    mflo $t2            # Load LO in t2
+    sw $t2, destino     # Store t2 in destino
 ```
 
 ### EJ 4
