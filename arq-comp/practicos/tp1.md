@@ -76,6 +76,10 @@ altura: .float 1.70
 key:    .word      
 ```
 
+`Estructura 1:` 5 bytes desperdiciados.
+
+`Estructura 2:` 1 byte desperciado.
+
 ### EJ 5
 
 |Posicion|Dato|Memoria|
