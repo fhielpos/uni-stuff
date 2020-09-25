@@ -68,7 +68,7 @@ lb $t3, 9($t0)
 |...|...|...|
 |0x0400 0000|00 00 00 00|...|
 
-Bytes desperdiciados por alineamiento: `6 bytes`
+Bytes desperdiciados por alineamiento: `8 bytes`
 
 ### EJ 2
 
