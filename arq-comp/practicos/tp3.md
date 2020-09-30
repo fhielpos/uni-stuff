@@ -74,3 +74,35 @@ Bytes desperdiciados por alineamiento: `8 bytes`
 
 Desplazamiento desde la etiqueta `datos` al primer byte de `password`: 12 bytes
 Direccion del caracter `!`: `0x0100 0039`
+
+## EJ 3
+
+VALORES DE LOS REGISTROS:
+```
+li $t0, 4                   # t0 = 4          
+lh t1, lastLogin+4($t0)     # t1 = 0x00 00
+addi $t0, $t0, 4            # t0 = 8
+lw t2, lastLogin($t0)       # t2 = 0x00 00 00 00
+la $t0, datos               # t0 = 0x01 00 00 10
+lb $t3, 9($t0)              # t3 = 0xFF FF FF FF
+```
+
+DIRECCIONES EFECTIVAS:
+```
+li $t0, 4                   # t0 = 4
+lh t1, lastLogin+4($t0)     # lastLogin+4($t0) = 0x0100 0014
+addi $t0, $t0, 4            # t0 = 8
+lw t2, lastLogin($t0)       # lastLogin+($t0) = 0x0100 0014
+la $t0, datos               # datos = 0x0100 0010
+lb $t3, 9($t0)              # 9($t0) = 0x0100 0019
+```
+
+**NOTA:**
+`lb` completa con el bit más significativo. Mientras que `lbu` no.
+`lb $t3, 0x0100 0019`
+
+`0x0100 0019` = FF
+`FF` = (1)111 1111
+`$t3` = 0xFF FF FF FF
+
+`lbu $t3, 0x0100 0019` = 0x00 00 00 FF
